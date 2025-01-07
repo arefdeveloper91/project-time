@@ -14,6 +14,7 @@ export class AppointmentListComponent {
 
 appointments : Appointment [] = []
 
+
 addAppontments () {
 
 if (this.newAppointmentTitle.trim().length && this.newAppointmentDate){
@@ -35,6 +36,10 @@ if (this.newAppointmentTitle.trim().length && this.newAppointmentDate){
 
 
 
+}
+
+deleteAppointment(index:number){
+  this.appointments.splice(index,1)
 }
 
 }
